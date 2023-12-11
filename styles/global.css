@@ -159,6 +159,8 @@ main h1, h2 {
 }
 
 #colaborators a {
+    width: 320px;
+
     text-decoration: none;
     color: var(--dark);
 }

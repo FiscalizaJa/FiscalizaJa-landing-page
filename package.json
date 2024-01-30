@@ -1,0 +1,16 @@
+{
+  "name": "fiscalizaja-landing-page",
+  "version": "1.0.0",
+  "description": "Esta é a landing page oficial do FiscalizaJá. Usamos apenas HTML, CSS e Javascript no modo padrão, não precisamos de nenhum framework aqui.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "astro": "^4.2.6",
+    "sass": "^1.70.0"
+  }
+}

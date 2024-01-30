@@ -1,0 +1,179 @@
+@use "colors";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+#ditado-apply {
+    font-size: 3.5em;
+    color: colors.$low-mid;
+    margin: 3rem 0 3rem 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: colors.$main-bg;
+    color: colors.$dark
+}
+
+p {
+    font-size: 1.1em;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: colors.$light;
+
+    padding: 25px;
+
+    img {
+        object-fit: contain;
+        max-width: 100%;
+    }
+
+    div {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header div {
+        width: fit-content;
+        max-width: 860px;
+
+        z-index: 99;
+    }
+
+    header img {
+        display: block;
+        transform: translateY(-5rem);
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #ditado-apply {
+        font-size: 2.5em
+    }
+}
+
+main {
+    width: 100%;
+    padding: 25px;
+
+    margin-bottom: 5rem;
+
+    h1, h2 {
+        width: fit-content;
+        margin: 1.2em auto;
+    }
+}
+
+#collections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        width: 330px;
+        min-height: 370px;
+    
+        border: 1px solid #34312d29;
+        border-radius: 12px;
+
+        h2 {
+            text-align: center;
+            margin-top: 0.1rem;
+            font-weight: normal;
+        }
+
+        p {
+            font-size: 0.9em;
+            padding: 4px;
+            text-align: center;
+        }
+
+        a {
+            display: block;
+            margin: 0.6em auto 1.3em auto;
+            
+            width: fit-content;
+            padding: 8px;
+        
+            font-size: 1.1em;
+        
+            text-align: center;
+            text-decoration: none;
+        
+            box-shadow: 0px 0px 1px #34312d3d;
+        
+            background-color: colors.$primary;
+            color: colors.$light;
+        
+            border-radius: 8px;
+            border: 1px solid #34312d29;
+        }
+    }
+
+    img {
+        object-fit: cover;
+        max-width: 100%;
+    }
+}
+
+#colaborators {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: fit-content;
+
+    margin: auto;
+    align-items: center;
+
+    text-align: center;
+
+    margin: auto;
+    margin-top: 4rem;
+
+    gap: 40px;
+
+    a {
+        width: 320px;
+    
+        text-decoration: none;
+        color: colors.$dark;
+
+        .image-container {
+            width: 160px;
+            height: 160px;
+        
+            margin: auto;
+        
+            border: 1px solid #34312d29;
+            border-radius: 50%;
+        
+            overflow: hidden;
+        
+            box-shadow: 0px 0px 1px #34312d3d;
+
+            img {
+                display: block;
+                margin: auto;
+                object-fit: cover;
+            }
+        }
+    }
+}
